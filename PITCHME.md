@@ -90,7 +90,9 @@ Reality is more complicated
 +++
 ## Consumer Tests
 ![Consumer Tests](./assets/imgs/consumer-test.png)
++++
 ## Pacts (Contracts)
 ![Pact](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LC2AYrI9MJa-_aAjE1u%2F-LN88wE6mKsXwlpUIcxu%2F-LN88wz2fQfOYHvvZS9d%2Fpact-file.png?generation=1537751897366466&alt=media)
++++
 ## Provider Tests
 ![Provider Tests](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LC2AYrI9MJa-_aAjE1u%2F-LN88wE6mKsXwlpUIcxu%2F-LN88wz4Eubp8M6KhgzM%2Fpact-verification.png?generation=1537751898715076&alt=media)
