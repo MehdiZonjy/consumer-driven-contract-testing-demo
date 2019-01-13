@@ -1,0 +1,17 @@
+{
+"uponReceiving": "a request for projects",
+"withRequest": {
+  "method": "GET",
+  "path": "/projects",
+  "headers": { "Accept": "application/json" }
+},
+"willRespondWith": {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json" },
+    "body": {
+      "id": 1,
+      "locale": "en"
+    }
+  }
+}
