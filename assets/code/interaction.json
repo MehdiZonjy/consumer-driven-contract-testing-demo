@@ -1,0 +1,17 @@
+{
+"uponReceiving": "a request for a profile",
+"withRequest": {
+  "method": "GET",
+  "path": "/profiles/1",
+  "headers": { "Accept": "application/json" }
+},
+"willRespondWith": {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json" },
+    "body": {
+      "id": 1,
+      "locale": "en"
+    }
+  }
+}
