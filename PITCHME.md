@@ -105,4 +105,4 @@ Reality is more complicated
 ## Async Messages
 - Consumer: Reads messages from messages broker
 - Provider: Send messages to messages broker
-![async](assets/imgs/async-parti.png)
+![async](assets/imgs/async-msg.png)
