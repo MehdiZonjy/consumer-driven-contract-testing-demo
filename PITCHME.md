@@ -96,3 +96,11 @@ Reality is more complicated
 +++
 ## Provider Tests
 ![Provider Tests](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LC2AYrI9MJa-_aAjE1u%2F-LN88wE6mKsXwlpUIcxu%2F-LN88wz4Eubp8M6KhgzM%2Fpact-verification.png?generation=1537751898715076&alt=media)
+## Consumer driven contract testing
+- It's two steps verification
+- It fails if changes in the provider cause it to be unable to return the expected response in the contract
+- It fails if the consumer is using invalid endpoints, or missing required parameters we would know
+## Async Messages
+- Consumer: Reads messages from messages broker
+- Provider: Send messages to messages broker
+![async](./assets/imgs/async-parti.png)

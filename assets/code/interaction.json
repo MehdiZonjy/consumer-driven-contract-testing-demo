@@ -1,8 +1,8 @@
 {
-"uponReceiving": "a request for projects",
+"uponReceiving": "a request for a profile",
 "withRequest": {
   "method": "GET",
-  "path": "/projects",
+  "path": "/profiles/1",
   "headers": { "Accept": "application/json" }
 },
 "willRespondWith": {
