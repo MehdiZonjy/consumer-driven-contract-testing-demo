@@ -6,13 +6,10 @@
 @code[javascript zoom-06](.\assets\code\interaction.json)
 @snapend
 ---
-@snap[west montserrat-heavy h2-white span-60]
-## @css[text-85](GitPitch Pro Code Presenting)
+@snap[west span-40]
+@code[golang zoom-07](src/go/sample.go)
 @snapend
 
-@snap[east span-40]
-@code[go zoom-06](assets/code/interaction.json)
-<br>
-<br>
+@snap[east span-50]
+### Live Code Presenting
 @snapend
-
