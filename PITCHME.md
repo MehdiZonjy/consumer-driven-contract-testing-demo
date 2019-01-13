@@ -106,3 +106,18 @@ Reality is more complicated
 - Consumer: Reads messages from messages broker
 - Provider: Send messages to messages broker
 ![async](assets/imgs/async-msg.png)
+## Async Consumer
+```javascript
+expectsToReceive('a valid create task message')
+  .withContent({
+    messageType: 'create-task',
+     payload: {
+      dueDate: 32112332,
+      groupId: 'user.byw.123_321',
+      message: 'hello world',
+      topicArn: 'arn:aws:sns:ap-southeast-1:321123:snsTopic1'
+    },
+    timestamp:'2019-01-03T08:59:56.643Z',
+    version: 1
+})
+```
