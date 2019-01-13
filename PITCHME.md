@@ -92,13 +92,13 @@ Reality is more complicated
 ![Consumer Tests](./assets/imgs/consumer-test.png)
 +++
 ## Pacts (Contracts)
-![Pact](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LC2AYrI9MJa-_aAjE1u%2F-LN88wE6mKsXwlpUIcxu%2F-LN88wz2fQfOYHvvZS9d%2Fpact-file.png?generation=1537751897366466&alt=media)
+![Pact](assets/imgs/pact.png)
 +++
 ## Provider Tests
-![Provider Tests](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LC2AYrI9MJa-_aAjE1u%2F-LN88wE6mKsXwlpUIcxu%2F-LN88wz4Eubp8M6KhgzM%2Fpact-verification.png?generation=1537751898715076&alt=media)
+![Provider Tests](assets/imgs/provider-tests.png)
 +++
 ## Workflow
-![workflow]((https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LC2AYrI9MJa-_aAjE1u%2F-LN88wE6mKsXwlpUIcxu%2F-LN88wz8GOdj0witaWgd%2Fpact-test-and-verify.png?generation=1537751898934036&alt=media)
+![workflow](assets/imgs/workflow.png)
 +++
 ## Consumer driven contract testing
 - It's two steps verification
