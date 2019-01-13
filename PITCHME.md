@@ -106,7 +106,20 @@ Reality is more complicated
 - Consumer: Reads messages from messages broker
 - Provider: Send messages to messages broker
 ![async](assets/imgs/async-msg.png)
++++
 ## Async Consumer
+ - should decouple message handling logic, from messages broker protocol
+```javascript
+const msgHandler = (msg) => {/*..*/}
+SqsIngestor.start(
+  {
+    handler: services.inboxMessagesRouter,
+    queueUrl: '....'
+  }
+)
+```
++++
+## Async Consumer Verification
 ```javascript
 expectsToReceive('a valid create task message')
   .withContent({
@@ -119,5 +132,32 @@ expectsToReceive('a valid create task message')
     },
     timestamp:'2019-01-03T08:59:56.643Z',
     version: 1
+}).verify(msg => {
+  msgHandler(msg))
+  expect(scheduledTasksRepo.create).toHaveBeenCalledTimes(1)
+}
+```
+### Async Provider Message Builder
+- Should isolate message construction code (perhabs using Factory or Builders)
+```javascript
+const createTaskMessage = (task) => ({
+  messageType: MESSAGE_TYPE_CREATE_TASK,
+  payload: {
+    message: task.message,
+    groupId: task.groupId,
+    dueDate: task.dueDate,
+    topicArn: task.topicArn
+  }
+  timestamp: new Date().toISOString(),
+  version: 1
 })
 ```
+---
+### Pacts Broker
+- Helps in moving pacts between consumers and provider
+- Intergrates with deployment pipelines
++++
+### Pacts Broker
+![Broker](https://raw.githubusercontent.com/wiki/pact-foundation/pact_broker/images/webhook_end_to_end.png)
+---
+### Demo Time
