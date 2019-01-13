@@ -97,6 +97,9 @@ Reality is more complicated
 ## Provider Tests
 ![Provider Tests](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LC2AYrI9MJa-_aAjE1u%2F-LN88wE6mKsXwlpUIcxu%2F-LN88wz4Eubp8M6KhgzM%2Fpact-verification.png?generation=1537751898715076&alt=media)
 +++
+## Workflow
+![workflow]((https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LC2AYrI9MJa-_aAjE1u%2F-LN88wE6mKsXwlpUIcxu%2F-LN88wz8GOdj0witaWgd%2Fpact-test-and-verify.png?generation=1537751898934036&alt=media)
++++
 ## Consumer driven contract testing
 - It's two steps verification
 - It fails if changes in the provider cause it to be unable to return the expected response in the contract
@@ -137,6 +140,7 @@ expectsToReceive('a valid create task message')
   expect(scheduledTasksRepo.create).toHaveBeenCalledTimes(1)
 }
 ```
++++
 ### Async Provider Message Builder
 - Should isolate message construction code (perhabs using Factory or Builders)
 ```javascript
@@ -161,3 +165,4 @@ const createTaskMessage = (task) => ({
 ![Broker](https://raw.githubusercontent.com/wiki/pact-foundation/pact_broker/images/webhook_end_to_end.png)
 ---
 ### Demo Time
+### Thx (^_^)
